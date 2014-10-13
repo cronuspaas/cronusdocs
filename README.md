@@ -1,4 +1,4 @@
 cronusdocs
 ==========
 
-cronus docs
+cronus documentation
