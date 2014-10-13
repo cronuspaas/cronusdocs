@@ -9,10 +9,10 @@ Welcome to cronus's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 2 
+   :maxdepth: 3
+   :glob:
 
-   HowTo_Guides
-
+   howtos/index 
 
 Indices and tables
 ==================
