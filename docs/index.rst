@@ -6,4 +6,5 @@ Cronus Table of Contents
    :maxdepth: 3
    :glob:
 
+   cronusmaster/index
    howtos/index 
