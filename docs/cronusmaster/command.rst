@@ -8,30 +8,29 @@ Command template is a complete HTTP(S) request in json format with replaceable v
 .. code-block:: javascript
 
   {
-   "name" : "SAMPLE_SYNC_COMMAND",
+   "name" : "SAMPLE_SYNC_COMMAND",                              // unique name of the command
+   "category" : "sample",                                       // optional category name for grouping
    "httpTaskRequest" : {
-     "taskType" : "async",
-     "httpClientType" : "httpClient",
-     "executionOption" : {
-       "timeOutSec" : 0,
-       "initDelaySec" : 0,
-       "maxRetry" : 3,
-       "retryDelaySec" : 0
+     "taskType" : "async",                                      // this is a http request with response
+     "httpClientType" : "httpClient",                           // type of http client to use 
+     "executionOption" : {                                      // below are options for sending request
+       "timeOutSec" : 0,                                        // time out in second
+       "initDelaySec" : 0,                                      // initial delay in second
+       "maxRetry" : 3,                                          // total # of retry on failure
+       "retryDelaySec" : 0                                      // delay before retry
      },
-     "urlTemplate" : {
-       "url" : "https://<host>:12020/services/<serviceName>",
-       "method" : "POST",
-       "body" : {
-       },
+     "urlTemplate" : {                                          // http request template
+       "url" : "https://<host>:12020/services/<serviceName>",   // url
+       "method" : "POST",                                       // http method
+       "body" : {},                                             // http body
        "headers" : {
-         "content-type" : "application/json"
+         "content-type" : "application/json"                    // http headers
        },
-       "parameters" : {
-       }
+       "parameters" : {}                                        // query string parameters
      },
-     "resProcessorName" : "agentProcessor"
+     "resProcessorName" : "agentProcessor"                      // bean for processing http response
    },
-   "userData" : {
+   "userData" : {                                               // user provided data to launch command Job
     "serviceName" : "myservice"
    }
   }
@@ -43,45 +42,28 @@ Command template is a complete HTTP(S) request in json format with replaceable v
 
    {
     "name" : "SAMPLE_ASYNCPOLL_COMMAND",
+    "category" : "sample",
     "httpTaskRequest" : {
-      "taskType" : "asyncpoll",
+      "taskType" : "asyncpoll",                              // this is a request followed by polling
       "httpClientType" : "httpClient",
-      "executionOption" : {
-        "timeOutSec" : 0,
-        "initDelaySec" : 0,
-        "maxRetry" : 3,
-        "retryDelaySec" : 0
-      },
-      "urlTemplate" : {
-        "url" : "https://<host>:12020/services/<serviceName>/action/restart",
-        "method" : "POST",
-        "body" : {
-        },
-        "headers" : {
-          "content-type" : "application/json",
-        },
-        "parameters" : {
-        }
-      },
-      "monitorOption" : {
-        "timeOutSec" : 0,
+      ...                                                    // same url template as above for request
+      "monitorOption" : {                                    // options for polling 
+        "timeOutSec" : 0,                                    
         "initDelaySec" : 0,
         "maxRetry" : 3,
         "retryDelaySec" : 0,
-        "intervalSec" : 10
+        "intervalSec" : 10                                   // polling interval in second
       },
-      "pollTemplate" : {
+      "pollTemplate" : {                                     // http polling template
         "url" : "https://<host>:12020/status/<uuid>",
         "method" : "GET",
-        "body" : {
-        },
+        "body" : {},
         "headers" : {
           "content-type" : "application/json"
         },
-        "parameters" : {
-        }
+        "parameters" : {}
       },
-      "resProcessorName" : "agentPollProcessor",
+      "resProcessorName" : "agentPollProcessor",             // bean for processing http response
     },
     "userData" : {
       "serviceName" : "myservice"
@@ -94,19 +76,21 @@ Command template is a complete HTTP(S) request in json format with replaceable v
 
 
   {
-    "name" : "Agent_Clean_ALL_Services",
+    "name" : "Agent_Clean_Service",
+    "category" : "agent",              // agent command with many fields predefined and can be skipped
     "httpTaskRequest" : {
       "taskType" : "asyncpoll",
       "httpClientType" : "httpClient",
       "urlTemplate" : {
-        "url" : "https://<host>:12020/agent/cleanup",
+        "url" : "https://<host>:12020/services/<serviceName>/action/cleanup",
         "method" : "POST",
         "body" : { },
         "headers" : { },
         "parameters" : { }
       }
     },
-    "userData" : { },
-    "category" : "agent"
+    "userData" : {
+      "serviceName" : "myservice"
+    }
   }
 

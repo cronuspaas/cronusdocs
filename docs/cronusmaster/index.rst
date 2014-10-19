@@ -8,6 +8,8 @@ Cronusmaster Doc
 
    introduction
    command
+   manage_command
+   oneclick_command
    nodegroup
    job
    log
