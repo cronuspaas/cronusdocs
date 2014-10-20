@@ -1,5 +1,5 @@
 ========================
-CronusMaster
+Cronus Master
 ========================
 
 .. toctree::
@@ -13,4 +13,5 @@ CronusMaster
    nodegroup
    job
    log
+   configurations
    howto 
