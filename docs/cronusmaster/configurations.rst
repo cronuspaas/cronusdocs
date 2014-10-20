@@ -7,7 +7,7 @@ This section explains cronus master configurations
 
 Cronus master configuration section in a sample play application.conf
 
-.. code-block:: 
+.. code-block:: bash
 
    # use local file | aws_s3 | openstack_swift to store user data
    agentmaster.userDataDao=file
@@ -44,14 +44,15 @@ Cronus master configuration section in a sample play application.conf
    # agent PKI authentication
    agentmaster.cronusagent.pkicert=path_to_cert
 
-   # ... rest of the play configuraiton in application.conf
+   # ... rest of the play configuration in application.conf
 
-**Configuraiton override for different environment**
+**Configuration override for different environment**
 
 One can build separate application.conf.{environment} in the play conf/ directory to be used for deploying cronus master in different environment. Upon deployment time
 
-#. Pass the environment value through agent deploy API call, e.g. ``curl -x POST '{"package": ["pkg_url"], "env": "prod"}' https://host:12020/services/cronusmaster/action/deploy``
-#. Agent will try to find the configuration file with the {environment} value postfix and use it (by renaming it to application.conf)
-#. Or if the environment specific configuraiton file is not found, will use the default base configuraiton application.conf
+#. Pass the environment value through agent deploy API call, e.g. ``curl -X POST '{..., "env": "prod"}' https://host:12020/services/cronusmaster/action/deploy``
+#. Agent will try to find the configuration file with .prod postfix and use it (by renaming it to application.conf)
+#. Or if the environment specific configuration file is not found, will use the default base configuration application.conf
 
 Same schemes work for logging configurations (log4j.properties) as well.
+
