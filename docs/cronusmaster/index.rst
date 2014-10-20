@@ -1,5 +1,5 @@
 ========================
-Cronusmaster Doc
+CronusMaster
 ========================
 
 .. toctree::
