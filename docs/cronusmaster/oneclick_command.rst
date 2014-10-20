@@ -6,8 +6,8 @@ Oneclick launch captures all the input necessary to launch a command job, this a
 **Why it is useful**
 
 * Deploy or rollback applications with one click or one API call
-* Save a job execution for repeated execution easily
-* Can auto adapt with evolving parameters, for example always deploy latest application package to target nodes
+* Save a job for repeated execution later
+* Enhance automation with adaptive smart template parameters, for example can deploy latest application package to target nodes as the application package gets uploaded
 
 **Sample oneclick launch**
 
@@ -36,15 +36,15 @@ Oneclick launch can be created in two ways
 
 **Smart template parameters**
 
-The following smart template parameters can be used in oneclick launch that allows oneclick launch more adaptive for changes
+The following smart template parameters can be used in oneclick launch to allow greater degree of reusability
 
-* <cmExternalIp>: reference public IP of the cronus master
-* <cmInternalIp>: reference private IP of the cronus master
+* <cmExternalIp>: reference public IP of the cronus master, value defined in cronusmaster config file
+* <cmInternalIp>: reference private IP of the cronus master, value defined in cronusmaster config file
 * <service-.*.platform.cronus.latest>: reference latest uploaded package for a service, for example <pyserver-.*.all.cronus.latest> is the latest version of the pyserver package, <pyserver-1.*.all.cronus.latest> is the latest version of 1.x.y of the pyserver package
 
-With smart template parameters, one can create an oneclick launch to deploy latest application package to a group of nodes, agent on the nodes will download the application package from cronusmaster within the same private network.
+With smart template parameters, one can create an oneclick launch to deploy latest application package to a group of nodes, without having to change anything in the oneclick launch.
 
 **Run oneclick**
 
-Run from "oneclick launch" tab with a single click, or one API call, will redirect to command job log page upon successful launch.
+Run from "oneclick launch" tab with a single click, or one API call, redirect to command job log page upon successful launch.
 
