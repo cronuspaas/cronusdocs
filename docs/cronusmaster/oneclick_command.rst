@@ -1,7 +1,7 @@
 OneClick Launch
 ===================
 
-Oneclick command captures all the input necessary to launch a command job, this allows a job to be launched with "one click" (or one API call).
+Oneclick launch captures all the input necessary to launch a command job, this allows a job to be launched with "one click" (or one API call).
 
 **Why it is useful**
 

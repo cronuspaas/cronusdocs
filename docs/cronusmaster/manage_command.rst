@@ -1,4 +1,4 @@
-Manage Command
+Command
 ===================
 
 **Create command**

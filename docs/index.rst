@@ -6,5 +6,7 @@ Cronus Table of Contents
    :maxdepth: 3
    :glob:
 
+   getting_started/index
    cronusmaster/index
-   howtos/index 
+   cronusagent/index
+ 

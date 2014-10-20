@@ -15,5 +15,5 @@ Cronusmaster can execute any http(s) request against one or many target nodes. T
 #. Define nodegroup with target node IPs or hostnames
 #. Execute materialized commmand on a nodegroup as a job
 #. Check result of the job in the log
-#. Optionally create a recurring job from an already executed job
-
+#. Optinoally create an oneclick launch from an already executed job
+#. Optionally create a recurring job from an already executed job or oneclick launch
