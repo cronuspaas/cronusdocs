@@ -6,7 +6,7 @@ Cronus Agent
 Others:
 
 .. toctree::
-   :maxdepth: 1 
+   :maxdepth: 22 
 
    install_cloud
    app_lifecycle

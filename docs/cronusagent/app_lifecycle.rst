@@ -37,18 +37,18 @@ Application Package Structure (aka Cronus Package)
 
    .. code-block:: bash
 
-      package_root/                       # package root directory
-          cronus/                         # cronus directory
-              cronus.prop                 # prop file describe the package
-              cronus.ini                  # configuration file in json format to customize agent behavior
-              scripts/                    # optional scripts directory containing package scripts
-                  install                 # execute when package is untarred the first time, executed once only during package life time.
-                  activate                # execute when parent manifest has been set active.
-                  startup                 # execute to 'start' a package
-                  running                 # execute to check package runtime state
-                  shutdown                # execute to 'shut down' a package
-                  deactivate              # execute when parent manifest gets deactivated
-          ...                             # any application files or directories to be packaged
+      package_root/              # package root directory
+          cronus/                # cronus directory
+              cronus.prop        # prop file describe the package
+              cronus.ini         # configuration file in json format to customize agent behavior
+              scripts/           # optional scripts directory containing package scripts
+                  install        # execute when package is untarred the first time, executed once only during package life time.
+                  activate       # execute when parent manifest has been set active.
+                  startup        # execute to 'start' a package
+                  running        # execute to check package runtime state
+                  shutdown       # execute to 'shut down' a package
+                  deactivate     # execute when parent manifest gets deactivated
+          ...                    # any application files or directories to be packaged
 
 * Cronus package deployed on compute
 
@@ -82,14 +82,20 @@ Application Life Cycle Management
 
   Agent requires a set of LCM scripts in order to control the application life cycle precisely
 
-  ========== ========= =====================
+ ========== ========= =====================
   Script     Required        Description
   ========== ========= =====================
-  install    optional  additional installation operations after software package is uncompressed and manifest created run only once within manifest life time
-  activate   optional  activate manifest run once every time manifest is activated, or reset
-  startup    required  start the application run once every time application is activated, startup, restart, or reset
-  shutdown   optional  shutdown the application run once every time application is activated, shutdown, restart, or reset
-  deactivate optional  deactivate the application run once every time manifest is activated, or reset
+  install    optional  additional installation operations after software package 
+                       is uncompressed and manifest created run only once 
+                       within manifest life time
+  activate   optional  activate manifest run once every time manifest is 
+                       activated, or reset
+  startup    required  start the application run once every time application is 
+                       activated, startup, restart, or reset
+  shutdown   optional  shutdown the application run once every time application is 
+                       activated, shutdown, restart, or reset
+  deactivate optional  deactivate the application run once every time manifest is 
+                       activated, or reset
   ========== ========= =====================
 
 * Because application startup script is called by a process launched by agent, one must make sure that
