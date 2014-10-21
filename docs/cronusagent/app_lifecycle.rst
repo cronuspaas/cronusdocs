@@ -82,21 +82,25 @@ Application Life Cycle Management
 
   Agent requires a set of LCM scripts in order to control the application life cycle precisely
 
- ========== ========= =====================
-  Script     Required        Description
-  ========== ========= =====================
-  install    optional  additional installation operations after software package 
-                       is uncompressed and manifest created run only once 
-                       within manifest life time
-  activate   optional  activate manifest run once every time manifest is 
-                       activated, or reset
-  startup    required  start the application run once every time application is 
-                       activated, startup, restart, or reset
-  shutdown   optional  shutdown the application run once every time application is 
-                       activated, shutdown, restart, or reset
-  deactivate optional  deactivate the application run once every time manifest is 
-                       activated, or reset
-  ========== ========= =====================
+  +-----------+------------+------------------------------------------------------------+
+  | Script    |   Required |       Description                                          |
+  +-----------+------------+------------------------------------------------------------+
+  |install    |  optional  | additional installation operations after software package  | 
+  |           |            | is uncompressed and manifest created run only once         |
+  |           |            | within manifest life time                                  |
+  +-----------+------------+------------------------------------------------------------+
+  |activate   |  optional  | activate manifest run once every time manifest is          | 
+  |           |            | activated, or reset                                        |
+  +-----------+------------+------------------------------------------------------------+
+  |startup    |  required  | start the application run once every time application is   |
+  |           |            | activated, startup, restart, or reset                      |
+  +-----------+------------+------------------------------------------------------------+
+  |shutdown   |  optional  | shutdown the application run once every time application is| 
+  |           |            | activated, shutdown, restart, or reset                     |
+  +-----------+------------+------------------------------------------------------------+
+  |deactivate | optional   | deactivate the application run once every time manifest is | 
+  |           |            | activated, or reset                                        |
+  +-----------+------------+------------------------------------------------------------+
 
 * Because application startup script is called by a process launched by agent, one must make sure that
 
