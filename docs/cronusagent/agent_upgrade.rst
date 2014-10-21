@@ -1,11 +1,11 @@
-Upgrade agent
+Agent Upgrade
 =================
 
 This section describes how to upgrade an existing Agent
 
 **New agent package must exist in release folder in git http://github.com/stackscaling/cronusagent/releases/agent-{target_version}.unix.cronus**
 
-::
+.. code-block:: bash
 
     curl -k -H "content-type:application/json" -X POST -d '{"version": "version_eg_0.1.46"}' \
     https://host:12020/agent/selfupdate

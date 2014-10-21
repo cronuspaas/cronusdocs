@@ -1,5 +1,7 @@
-Access locally persisted application data
+Application Data 
 ===============
+
+This guide describes how to access locally persisted application data
 
 **Data local to specific manifest**
 

@@ -1,5 +1,7 @@
-Deploy application by agent API
+Deploy Application 
 =======================
+
+This guide describes how to deploy an application directly through agent REST API without cronusmaster
 
 **Requires:**
 
@@ -15,10 +17,6 @@ Deploy application by agent API
    service_name: mandatory service name
    cronus_package_url: mandatory url location to your cronus package 
    manifest_name: optional manifest name, default to use cronus package version
-
-or 
-
-Just use cronusmaster UI
 
 **Expected Outcome:**
 
