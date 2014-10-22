@@ -26,7 +26,8 @@ Follow the steps to install agent in AWS EC2, or Goggle GCE Cloud
 .. code-block:: bash
    
    # install agent
-   curl -sSL 'http://www.stackscaling.com/downloads/install_agent' | sudo server_pem=path_to_ssl_cert agent_pwd=user:password bash
+   curl -sSL 'http://www.stackscaling.com/downloads/install_agent' | \
+   sudo server_pem=path_to_ssl_cert agent_pwd=user:password bash
    # check agent availability
    curl -k https://localhost:12020/agent
 
