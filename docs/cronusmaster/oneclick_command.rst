@@ -48,3 +48,4 @@ With smart template parameters, one can create an oneclick launch to deploy late
 
 Run from "oneclick launch" tab with a single click, or one API call, redirect to command job log page upon successful launch.
 
+.. image:: ../images/oneclick_launch.png

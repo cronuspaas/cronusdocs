@@ -17,3 +17,5 @@ Cronusmaster can execute any http(s) request against one or many target nodes. T
 #. Check result of the job in the log
 #. Optinoally create an oneclick launch from an already executed job
 #. Optionally create a recurring job from an already executed job or oneclick launch
+
+.. image:: ../images/cronusmaster_main.png

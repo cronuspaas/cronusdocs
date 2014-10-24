@@ -33,3 +33,4 @@ Delete command from persistent store
 
 Run command will launch command wizard, allow user to select nodegroup against which command will be run, customize with execution options, user data, and start command job, upon successful launch of the job, its progress and result can be found in command job log. 
 
+.. image:: ../images/command_summary.png
