@@ -7,5 +7,6 @@ Getting Started
    :glob:
 
    getting_started
+   advanced_setup
    deploy_application_workflow
 
