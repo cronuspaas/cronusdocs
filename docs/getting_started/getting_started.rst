@@ -18,22 +18,19 @@ Steps to install Cronus agent and Cronus master on a machine.
 
       # Prepare GCE centos7 VM
       sudo yum install wget
-      sudo yum install git
 
       # Prepare EC2 ubuntu14 VM
       sudo apt-get install git
 
       cd ~
+      wget -qO- 'http://www.stackscaling.com/downloads/install_cronusmaster' | bash
       git clone https://github.com/stackscaling/cronusmaster.git
-      cd cronusmaster/AgentMaster/conf
-      cp application.conf.template application.conf
-      cp application.conf.template application.conf.prod
-      ./install.sh
 
    expected outcome:
 
    * CronusAgent is running at https://host:12020/agent
    * CronusMaster is running at http://host:9000
+   * CronusMaster code is downloaded and saved in ~/cronusmaster-master
 
 **Deploy First App**
 
