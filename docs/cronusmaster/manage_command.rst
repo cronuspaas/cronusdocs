@@ -19,7 +19,7 @@ Command
 
 #. Define user data, it will be used to drive command launch wizard
 
-.. image:: images/command_edit.png
+.. image:: ../images/command_edit.png
 
 **Modify command**
 
