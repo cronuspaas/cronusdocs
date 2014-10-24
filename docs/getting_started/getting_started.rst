@@ -11,6 +11,7 @@ Steps to install Cronus agent and Cronus master on a machine.
 * openssl > 0.9.8
 * wget
 * system management daemon systemd or upstart
+* java runtime >= 1.5 (for CronusMaster only)
 
 **Install Agent and Master**
 

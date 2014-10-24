@@ -18,7 +18,7 @@ Default cronusmaster installation uses application.conf, edit configurations of 
    # agent basic authentication
    agentmaster.cronusagent.password=username:password
 
-Redeploy CronusMaster after changes ``scripts/install.sh {env}``
+Redeploy CronusMaster after changes ``~/cronusmaster-master/scripts/install.sh {env}``
 
 
 Advance CronusAgent Settings
