@@ -13,6 +13,10 @@ Nodegroup is uniquely identified by its name, values are line separated hostname
 * Can be referenced in oneclick launch
 * Can be referenced in recurring job
 
+nodegroup summary
+
 .. image:: ../images/nodegroup_summary.png
+
+edit nodegroup
 
 .. image:: ../images/nodegroup_edit.png

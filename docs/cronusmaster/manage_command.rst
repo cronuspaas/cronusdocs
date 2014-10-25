@@ -19,6 +19,8 @@ Command
 
 #. Define user data, it will be used to drive command launch wizard
 
+edit command 
+
 .. image:: ../images/command_edit.png
 
 **Modify command**
@@ -29,8 +31,26 @@ Except the name, which is immutable, data of the command can be modified
 
 Delete command from persistent store
 
-**Run command** 
-
-Run command will launch command wizard, allow user to select nodegroup against which command will be run, customize with execution options, user data, and start command job, upon successful launch of the job, its progress and result can be found in command job log. 
+command summary page
 
 .. image:: ../images/command_summary.png
+
+**Run command** 
+
+Run command will launch command wizard
+
+* wizard screen 1: customize command with execution options, user data
+* wizard screen 2: select nodegroup against which command will be run
+* wizard screen 3: confirm and launch command job, job progress and result can be found in command job log. 
+
+wizard screen 1
+
+.. image:: ../images/command_wizard_1.png
+
+wizard screen 2
+
+.. image:: ../images/command_wizard_2.png
+
+wizard screen 3
+
+.. image:: ../images/command_wizard_3.png
