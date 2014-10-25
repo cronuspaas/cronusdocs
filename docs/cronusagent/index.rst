@@ -18,5 +18,5 @@ Others:
    agent_upgrade
    security_best_practice
    agent_api
-   Agent_Config_Howto
+   agent_configurations
 

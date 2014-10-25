@@ -14,4 +14,5 @@ Cronus Master
    job
    log
    configurations
+   api
    howto 

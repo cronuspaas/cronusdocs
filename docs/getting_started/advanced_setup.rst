@@ -12,10 +12,10 @@ Default cronusmaster installation uses application.conf, edit configurations of 
    agentmaster.externalIp=cronusmaster_external_ip
    agentmaster.internalIp=cronusmaster_internal_ip
 
-   # user data location (applicable only if use local fs for user data)
+   # user data location (applicable only if use local FS for user data)
    agentmaster.userDataDao.file.dir=.appdata
 
-   # agent basic authentication
+   # agent basic authentication, need this if remote agent auth is enabled
    agentmaster.cronusagent.password=username:password
 
 Redeploy CronusMaster after changes ``~/cronusmaster-master/scripts/install.sh {env}``

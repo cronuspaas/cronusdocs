@@ -1,4 +1,4 @@
-Security Best practice
+Security Best Practice
 ========================
 
 **Why:**
