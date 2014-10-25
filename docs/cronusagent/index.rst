@@ -14,10 +14,9 @@ Others:
    cronus_packaging
    app_deployed_by_agent
    app_access_data
-   app_lcm_scripts
    agent_ssl_auth
    agent_upgrade
    security_best_practice
-   Agent_API_Howto
+   agent_api
    Agent_Config_Howto
 
