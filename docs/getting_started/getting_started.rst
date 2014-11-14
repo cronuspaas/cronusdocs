@@ -11,27 +11,20 @@ Steps to install Cronus agent and Cronus master on a machine.
 * openssl > 0.9.8
 * wget
 * system management daemon systemd or upstart
+* unzip (for CronusMaster only)
 * java runtime >= 1.5 (for CronusMaster only)
 
 **Install Agent and Master**
 
    .. code-block:: bash
 
-      # Prepare GCE centos7 VM
-      sudo yum install wget
-
-      # Prepare EC2 ubuntu14 VM
-      sudo apt-get install git
-
-      cd ~
-      wget -qO- 'http://www.stackscaling.com/downloads/install_cronusmaster' | bash
-      git clone https://github.com/stackscaling/cronusmaster.git
+      cd ~; wget -qO- 'http://www.stackscaling.com/downloads/install_cronusmaster' | bash
 
    expected outcome:
 
    * CronusAgent is running at https://host:12020/agent
    * CronusMaster is running at http://host:9000
-   * CronusMaster code is downloaded and saved in ~/cronusmaster-master
+   * CronusMaster code is saved in ~/cronusmaster-master
 
 **Deploy First App**
 
@@ -41,8 +34,7 @@ Steps to install Cronus agent and Cronus master on a machine.
 
    .. code-block:: bash
 
-      cd /tmp
-      wget -qO- 'http://www.stackscaling.com/downloads/install_agent' | sudo dev=true bash
+      cd /tmp; wget -qO- 'http://www.stackscaling.com/downloads/install_agent' | sudo dev=true bash
 
    expected outcome:
 
