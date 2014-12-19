@@ -40,3 +40,21 @@ Steps to install Cronus agent and Cronus master on a machine.
 
    * CronusAgent is running at https://localhost:12020/agent
 
+**Tested IaaS Compute Profiles**
+
+The following IaaS compute profiles have been tested working with Cronus.
+
+AWS
+
+* Ubuntu12.04
+
+GCP
+
+* Ubuntu12.04
+* RHEL7
+
+Azure
+
+* Ubuntu12.04
+* Ubuntu14.04
+* Openlogic7
