@@ -47,11 +47,15 @@ The following IaaS compute profiles have been tested working with Cronus.
 AWS
 
 * Ubuntu12.04
+* Ubuntu14.04
+* RHEL7
 
 GCP
 
 * Ubuntu12.04
+* Ubuntu14.04
 * RHEL7
+* CentOS7
 
 Azure
 
