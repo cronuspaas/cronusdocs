@@ -1,9 +1,10 @@
-Getting Started
+Quick Setup
 ==============================
 
 Steps to install Cronus agent and Cronus master on a machine.
 
-**Prerequisites**
+Prerequisites
+--------------
 
 * linux (Ubuntu, Cent, Redhat, Fedora etc.)
 * sudo permission
@@ -14,23 +15,25 @@ Steps to install Cronus agent and Cronus master on a machine.
 * unzip (for CronusMaster only)
 * java runtime >= 1.5 (for CronusMaster only)
 
-**Install Agent and Master**
+Install Agent and Master
+--------------------------
 
    .. code-block:: bash
 
       cd ~; wget -qO- 'http://www.stackscaling.com/downloads/install_cronusmaster' | bash
 
-   expected outcome:
+   **Expected outcome:**
 
    * CronusAgent is running at https://host:12020/agent
    * CronusMaster is running at http://host:9000
    * CronusMaster code is saved in ~/cronusmaster-master
 
-**Deploy First App**
+   **Deploy First App**
 
-  In CronusMaster, navigate to Commands -> Oneclick Launch, run deploy_pyserver_local, wait for it complete, check application running at http://host:8999
+   Now you can try to deploy the first app to local machine through cronusmaster. In CronusMaster (http://host:9000), run "Deploy Helloworld App", wait for it complete, check sample application running at http://host:8999
 
-**Install Agent Only**
+Install Agent Only
+-------------------
 
    .. code-block:: bash
 
@@ -40,7 +43,8 @@ Steps to install Cronus agent and Cronus master on a machine.
 
    * CronusAgent is running at https://localhost:12020/agent
 
-**Tested IaaS Compute Profiles**
+Tested IaaS Compute Profiles
+-----------------------------
 
 The following IaaS compute profiles have been tested working with Cronus.
 
