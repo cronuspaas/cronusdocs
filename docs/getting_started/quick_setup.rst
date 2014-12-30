@@ -20,7 +20,7 @@ Install Agent and Master
 
    .. code-block:: bash
 
-      cd ~; wget -qO- 'http://www.stackscaling.com/downloads/install_cronusmaster' | bash
+      cd ~; wget -qO- 'http://cronuspaas.github.io/downloads/install_cronusmaster' | bash
 
    **Expected outcome:**
 
@@ -37,7 +37,7 @@ Install Agent Only
 
    .. code-block:: bash
 
-      cd /tmp; wget -qO- 'http://www.stackscaling.com/downloads/install_agent' | sudo dev=true bash
+      cd /tmp; wget -qO- 'http://cronuspaas.github.io/downloads/install_agent' | sudo dev=true bash
 
    expected outcome:
 

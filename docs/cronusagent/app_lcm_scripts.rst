@@ -8,7 +8,7 @@ This guide describe how to create application lifecycle scripts.
    .. code-block:: bash
 
       cd application_root
-      wget -qO- 'http://www.stackscaling.com/downloads/bootstrap_cronus' | DIR=. bash
+      wget -qO- 'http://cronuspaas.github.io/downloads/bootstrap_cronus' | DIR=. bash
 
 #. Modify scripts to your need
 

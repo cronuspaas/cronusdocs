@@ -16,7 +16,7 @@ Application Packaging
    .. code-block:: bash
 
       cd ~
-      git clone https://github.com/stackscaling/cronusstacks.git
+      git clone https://github.com/cronuspaas/cronusstacks.git
       cd cronusstacks/node_app
       ./package.sh upload
 

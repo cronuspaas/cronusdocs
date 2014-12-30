@@ -8,7 +8,7 @@ This guide describe
 
 .. code-block:: bash
 
-    wget -qO- 'http://www.stackscaling.com/downloads/install_agent' \
+    wget -qO- 'http://cronuspaas.github.io/downloads/install_agent' \
     | sudo server_pem={path_to_pem_file} agent_pwd={user:password} bash
 
 
