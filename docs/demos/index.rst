@@ -8,3 +8,5 @@ Demos
 
    cronus_agent_setup
    cronus_master_setup
+   change_master_configs
+   deploy_remote_compute
