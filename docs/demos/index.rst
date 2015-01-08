@@ -1,5 +1,5 @@
 ========================
-Animated GIF Demos
+Demos
 ========================
 
 .. toctree::
@@ -7,4 +7,4 @@ Animated GIF Demos
    :glob:
 
    cronus_agent_setup
-
+   cronus_master_setup
