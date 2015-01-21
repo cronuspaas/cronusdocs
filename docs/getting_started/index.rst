@@ -6,7 +6,7 @@ Getting Started
    :maxdepth: 2 
    :glob:
 
-   getting_started
+   quick_setup
    advanced_setup
    deploy_application_workflow
 

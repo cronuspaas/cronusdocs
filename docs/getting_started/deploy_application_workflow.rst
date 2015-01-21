@@ -3,25 +3,28 @@ Deploy Application Workflow
 
 This document describe steps to deploy an application to cloud by using Cronus framework.
 
-**Prerequisites**
+Prerequisites
+--------------
 
 * Cronus agent and Cronus master are already installed
 
-**Application Packaging**
+Application Packaging
+----------------------
 
 * Checkout desired application, package and upload
 
    .. code-block:: bash
 
       cd ~
-      git clone https://github.com/stackscaling/cronusstacks.git
+      git clone https://github.com/cronuspaas/cronusstacks.git
       cd cronusstacks/node_app
       ./package.sh upload
 
    Expected outcome: node_app is packaged and uploaded to local CronusMaster, check http://localhost:9000/agent/packages for the uploaded package
 
 
-**Deploy and Rollback**
+Deploy and Rollback
+--------------------
 
 * Deploy
    
@@ -35,14 +38,16 @@ This document describe steps to deploy an application to cloud by using Cronus f
    #. Run oneclick launch "rollback_nodeapp_local", wait for it to complete
    #. Check the change is rolled back
 
-**Startup, Shutdown and Restart**
+Startup, Shutdown and Restart
+-------------------------------
 
 * In CronusMaster, navigate to commands -> commands
 * Run Agent_Service_LCMAction, go through command wizard, select nodegroup "Localhost", fill in json user data of "serviceName": "nodeapp", "action": "restart", execute
 * Wait for job to complete, click fulltext search in cmd job page to see the raw script output, note that shutdown and startup scripts are called respectively
 * Repeat the above step for action="shutdown", and action="startup"
 
-**Other Excercises**
+Other Excercises
+------------------
 
 * Create a new nodegroup with list of nodes that are not localhost, install agent on them and deploy the same node application to the new nodegroup
 * Create a recurring job that deploy latest nodeapp to localhost every 5 minutes

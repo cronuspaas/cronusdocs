@@ -3,8 +3,6 @@ Cronus Agent
 ======================
 
 
-Others:
-
 .. toctree::
    :maxdepth: 22 
 

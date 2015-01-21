@@ -9,4 +9,5 @@ Cronus Table of Contents
    getting_started/index
    cronusmaster/index
    cronusagent/index
+   demos/index
  

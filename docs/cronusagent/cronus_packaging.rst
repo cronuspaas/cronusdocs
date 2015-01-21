@@ -3,7 +3,7 @@ This recipe describes steps to package an application ready for cronus deploymen
 * Bootstrap application with packaging script
 ```
 cd app_root
-curl -sSL 'http://www.stackscaling.com/downloads/bootstrap_agent' | bash
+wget -qO- 'http://cronuspaas.github.io/downloads/bootstrap_agent' | bash
 ```
 * Modify package.sh with appropriate values for appname, version, src_pkgs, and platform
 * Package the application: ./package.sh

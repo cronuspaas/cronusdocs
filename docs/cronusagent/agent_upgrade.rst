@@ -3,7 +3,7 @@ Agent Upgrade
 
 This section describes how to upgrade an existing Agent
 
-**New agent package must exist in release folder in git http://github.com/stackscaling/cronusagent/releases/agent-{target_version}.unix.cronus**
+**New agent package must exist in release folder in git http://github.com/cronuspaas/pkgs/{target_version}.unix.cronus**
 
 .. code-block:: bash
 
