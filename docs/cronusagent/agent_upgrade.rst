@@ -8,7 +8,7 @@ This section describes how to upgrade an existing Agent
 .. code-block:: bash
 
     curl -k -H "content-type:application/json" -X POST -d '{"version": "version_eg_0.1.46"}' \
-    https://host:12020/agent/selfupdate
+    https://host:19000/agent/selfupdate
 
 or
 
@@ -16,6 +16,6 @@ Update through cronusmaster UI
 
 **Expect Outcome:**
 
-Agent upgraded to new version, version number can be found in agent VI page https://host:12020/agent/ValidateInternals.html
+Agent upgraded to new version, version number can be found in agent VI page https://host:19000/agent/ValidateInternals.html
 
 

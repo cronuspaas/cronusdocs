@@ -29,7 +29,7 @@ Steps to install Cronus agent and Cronus master on a machine.
 
    expected outcome:
 
-   * CronusAgent is running at https://host:12020/agent
+   * CronusAgent is running at https://host:19000/agent
    * CronusMaster is running at http://host:9000
    * CronusMaster code is downloaded and saved in ~/cronusmaster-master
 
@@ -46,5 +46,5 @@ Steps to install Cronus agent and Cronus master on a machine.
 
    expected outcome:
 
-   * CronusAgent is running at https://localhost:12020/agent
+   * CronusAgent is running at https://localhost:19000/agent
 

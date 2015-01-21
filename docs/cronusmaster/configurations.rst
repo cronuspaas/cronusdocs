@@ -50,7 +50,7 @@ Cronus master configuration section in a sample play application.conf
 
 One can build separate application.conf.{environment} in the play conf/ directory to be used for deploying cronus master in different environment. Upon deployment time
 
-#. Pass the environment value through agent deploy API call, e.g. ``curl -X POST '{..., "env": "prod"}' https://host:12020/services/cronusmaster/action/deploy``
+#. Pass the environment value through agent deploy API call, e.g. ``curl -X POST '{..., "env": "prod"}' https://host:19000/services/cronusmaster/action/deploy``
 #. Agent will try to find the configuration file with .prod postfix and use it (by renaming it to application.conf)
 #. Or if the environment specific configuration file is not found, will use the default base configuration application.conf
 

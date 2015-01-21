@@ -20,7 +20,7 @@ Command template is a complete HTTP(S) request in json format with replaceable v
        "retryDelaySec" : 0                                      // delay before retry
      },
      "urlTemplate" : {                                          // http request template
-       "url" : "https://<host>:12020/services/<serviceName>",   // url
+       "url" : "https://<host>:19000/services/<serviceName>",   // url
        "method" : "POST",                                       // http method
        "body" : {},                                             // http body
        "headers" : {
@@ -55,7 +55,7 @@ Command template is a complete HTTP(S) request in json format with replaceable v
         "intervalSec" : 10                                   // polling interval in second
       },
       "pollTemplate" : {                                     // http polling template
-        "url" : "https://<host>:12020/status/<uuid>",
+        "url" : "https://<host>:19000/status/<uuid>",
         "method" : "GET",
         "body" : {},
         "headers" : {
@@ -82,7 +82,7 @@ Command template is a complete HTTP(S) request in json format with replaceable v
       "taskType" : "asyncpoll",
       "httpClientType" : "httpClient",
       "urlTemplate" : {
-        "url" : "https://<host>:12020/services/<serviceName>/action/cleanup",
+        "url" : "https://<host>:19000/services/<serviceName>/action/cleanup",
         "method" : "POST",
         "body" : { },
         "headers" : { },

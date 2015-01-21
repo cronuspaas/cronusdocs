@@ -31,7 +31,7 @@ Any data passed in from deploy API will be available to the application life cyc
 
     # deploy API call
         curl -k -X POST -d '{"package": ["http://$_cronus_package_url_"], "env": "production"' \
-        https://host:12020/services/$_service_name_/action/deploy
+        https://host:19000/services/$_service_name_/action/deploy
 
     # in activate script, this will print env=production
         echo "env=$env"

@@ -13,7 +13,7 @@ This guide describes how to deploy an application directly through agent REST AP
 
    curl -k -X POST -d '{"package": ["{cronus_package_url}"], "manifest": "{manifest_name}", \
    "env": "{env}", "daemon": "upstart|systemd"}' \
-   https://host:12020/services/{service_name}/action/deploy 
+   https://host:19000/services/{service_name}/action/deploy 
 
    # service_name: mandatory service name
    # cronus_package_url: mandatory url location to your cronus package 

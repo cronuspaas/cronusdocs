@@ -45,4 +45,4 @@ Agent configurations and default values, configurations can be override through 
 
 .. code-block:: bash
 
-  curl -k -X POST -d '{"configs": {"<configName>": "<configValue>"}}' https://host:12020/agent/config
+  curl -k -X POST -d '{"configs": {"<configName>": "<configValue>"}}' https://host:19000/agent/config
