@@ -120,7 +120,7 @@ Application Life Cycle Management
 **Timeouts and Passing Information to Agent**
 
 * Timeout: Scripts must exit before timeout expires, or process be killed, default timeout is 15 minutes configurable by agent config.
-* Progress Timeout: Scripts must demonstrate progress (progress number increasing) by passing progress information to agent or process be killed, default progress timeout is 15 minutes configurable by agent config.
+* Progress Timeout: Scripts must demonstrate progress (progress number increasing) by passing progress information to agent or process be killed, default progress timeout is 1 minute configurable by agent config.
 * Passing Information to Agent while Running: Scripts can pass progress and other information to agent via stdout while running, in syntax
 
   .. code-block:: javascript
@@ -139,7 +139,13 @@ Application Life Cycle Management
 
     .. code-block:: javascript
 
-      // sample message to agent for progress or for success
+      // simple report progress increments
+      [AGENT_MESSAGE] +1.0 [AGENT_MESSAGE_END]
+
+      // simple report progress
+      [AGENT_MESSAGE] 50.0 [AGENT_MESSAGE_END]
+ 
+      // sample message to agent for successful completion
       [AGENT_MESSAGE] 
       {
         "progress": 100,
